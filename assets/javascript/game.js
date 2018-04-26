@@ -11,8 +11,7 @@ document.onkeyup = function(event) {
     // Determines which key was pressed.
     var userGuess = event.key.toLowerCase();
 
-    //this will add the user guess to the array guessesSoFar
-    guesses.push(userGuess);
+    
 
 
     // Randomly chooses a choice from the options array. This is what the computer is "thinking of"
@@ -24,7 +23,10 @@ document.onkeyup = function(event) {
             wins++;
             guesses = [];
             guessesLeft = 9;
+        }else if(guesses.indexOf(userGuess) !== -1){
+            alert("You already guessed " + userGuess + "." + " Try again.");
         }else{
+            guesses.push(userGuess); //this will add the user guess to the array guessesSoFar
             guessesLeft--;
             if(guessesLeft < 1){
                 losses++;
