@@ -2,23 +2,48 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Psychic Game</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <meta charset="UTF-8">
+    
+    <title>Psychic Game</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.0/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-ngZZrhEgN1Rw+Eiz3bD0nopbhvTAwzNg5ePjP2mhYmjHiTqG+ouPwi4ribjATEKe" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 
 <body>
+    <div class="container">
+        
+        <div class="card bg-dark text-white row">
+            <img class="card-img" src="assets/images/psychic-banner.jpg" alt="Card image">
+            <div class="card-img-overlay col-md-4 offset-1">
+                <br>
+                <br>
+                <div class="highlight">
+                <h5 class="card-title"><strong>Guess what letter I'm thinking of</strong></h5>
+                <p class="card-text"><strong>Wins: <span id="wins">0</span></strong></p>
+                <p class="card-text"><strong>Losses: <span id="losses">0</span></strong></p>
+                <p class="card-text"><strong>Guesses Left: <span id="guessesLeft">9</span></strong></p>
+                <p class="card-text"><strong>Your Guesses so far: <span id="guesses"></span></strong></p>
+                </div>
+            </div>
+        </div>
 
-    <div id="game">
-        <h1>The Psychic Game</h1>
-        <p>Guess what letter I'm thinking of</p>
-        <p>Wins: <span id="wins">0</span></p>
-        <p>Losses: <span id="losses">0</span></p>
-        <p>Guesses Left: <span id="guessesLeft">9</span></p>
-        <p>Your Guesses so far: <span id="guesses"></span></p>
+
+        <div class="row">
+            <div class="jumbotron col-md-12 text-center">
+                <h1 class="card-text">The Psychic Game</h1>
+                <br>
+                <p class="card-text">Can you guess what letter the computer is thinking of in this fun mind reading game?</p> 
+                <p class="card-text">To play the game, guess a letter by pressing the corresponding key. You have 9 attempts to guess the correct letter or the computer will win that round. Once you win or lose a round, a new round will automatically begin.</p>
+            </div>
+        </div>
     </div>
+    
 
   
 

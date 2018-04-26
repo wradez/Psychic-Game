@@ -20,6 +20,7 @@ document.onkeyup = function(event) {
     //game rules 
     if(userGuess === "a" || userGuess === "b" || userGuess === "c" || userGuess === "d" || userGuess === "e" || userGuess === "f" || userGuess === "g" || userGuess === "h" || userGuess === "i" || userGuess === "j" || userGuess === "k" || userGuess === "l" || userGuess === "m" || userGuess === "n" || userGuess === "o" || userGuess === "p" || userGuess === "q" || userGuess === "r" || userGuess === "s" || userGuess === "t" || userGuess === "u" || userGuess === "v" || userGuess === "w" || userGuess === "x" || userGuess === "y" || userGuess === "z"){
         if(userGuess === computerGuess){
+            alert("Winner Winner Chicken Dinner!");
             wins++;
             guesses = [];
             guessesLeft = 9;
@@ -29,6 +30,7 @@ document.onkeyup = function(event) {
             guesses.push(userGuess); //this will add the user guess to the array guessesSoFar
             guessesLeft--;
             if(guessesLeft < 1){
+                alert("Plus one for the enemy...better luck next round");
                 losses++;
                 guesses = [];
                 guessesLeft = 9;
@@ -36,7 +38,6 @@ document.onkeyup = function(event) {
         }
     }else{
         alert("Stop being an idiot!");
-        guesses.splice(guesses.length -1,1);
     }
 
     //write the wins, losses, guesses left and what has been guessed to teh page for teh user to view
